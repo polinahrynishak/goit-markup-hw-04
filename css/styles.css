@@ -91,10 +91,6 @@ button:active {
   justify-content: center;
 }
 
-.menu-item.menu-item-studio {
-  color: #404bbf;
-}
-
 .site-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -130,12 +126,13 @@ button:active {
   padding-bottom: 24px;
 }
 
-.menu-item.menu-item-studio {
+.menu-item-studio .menu-link {
+  color: #404bbf;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-item.menu-item-studio::after {
+.menu-item-studio .menu-link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -145,6 +142,7 @@ button:active {
   border-radius: 2px;
   background: #404bbf;
   opacity: 1;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -157,7 +155,7 @@ button:active {
   display: flex;
   gap: 40px;
 
-  .address-link {
+  .address-item .address-link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
