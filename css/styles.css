@@ -209,6 +209,7 @@ button:active {
   align-items: center;
   justify-content: center;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ============ HERO SECTION STYLES ============ */
 
@@ -227,18 +228,15 @@ button:active {
   overflow: hidden;
 }
 
-.benefits-icons-list {
+.benefits-icon-container {
   display: flex;
-  column-gap: 24px;
-  margin-bottom: 8px;
-}
-
-.benefits-icons-item {
-  width: calc((100% - 72px) / 4);
-  background: #f4f4fd;
-  border: 1px solid #8e8f99;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
   border-radius: 4px;
-  padding: 24px 100px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
 }
 
 .benefits-list {
